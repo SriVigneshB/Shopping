@@ -12,8 +12,9 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Your Cart</title>
+    <title>Boy’s T-Shirt</title>
   </head>
+
   <body>
     <!-- Navigation -->
     <div class="top-nav">
@@ -31,36 +32,34 @@
         <a href="index.html" class="logo"><h1>Dans</h1></a>
 
         <ul class="nav-list d-flex">
-            <li class="nav-item">
-             <a href="index.html" class="nav-link">Home</a>
-           </li>
-         <li class="nav-item">
-           <a href="product.html" class="nav-link">Shop</a>
-         </li>
-         <li class="nav-item">
-           <a href="cart.html" class="nav-link">Cart</a>
-         </li>
-         <li class="nav-item">
-           <a href="orders.html" class="nav-link">MyOrders</a>
-         </li>
-         <li class="nav-item">
-           <a href="index.html" class="nav-link">Logout</a>
-         </li>
-          
+           <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#terms" class="nav-link">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
+        <div class="search-bar">
+            <i class="bx bx-search"></i>
+            <input type="search" class="search" placeholder="Search your products">
+            
+          </div>
 
         <div class="icons d-flex">
           <div class="icon">
-            <a href="account.html"><i class="fa fa-home"></i></a>
+          <a href="account.html"> <i class="fa fa-home"></i></a>
           </div>
-          <a href="orders.html" class="icon">
-            <div class="icon">
-             <i class="fa fa-shopping-bag"></i>
-            </div>
-          </a>
-          <a href="cart.html" class="icon">
-            <i class="bx bx-cart"></i>
-          </a>
+          <a href="reports.html"> <i class="fa fa-file"></i></a>
+          </div>
           <a href="index.html" class="icon">
               <i class="fa fa-sign-out"></i>
             </a>
@@ -72,102 +71,66 @@
       </div>
     </div>
 
-    <!-- Cart Items -->
-    <div class="container cart">
-      <table>
-        <tr>
-          <th>Product</th>
-          <th>Id</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-2.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $50.00</span> <br />
-                
-              </div>
-            </div>
-          </td>
-          <td>12100</td>
-         <td>1</td>
-          <td>$50.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-3.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $90.00</span> <br />
-               
-              </div>
-            </div>
-          </td>
-          <td>12100</td>
-          <td>1</td>
-          <td>$90.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-4.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $60.00</span> <br />
-               
-              </div>
-            </div>
-          </td>
-          <td>12100</td>
-          <td>1</td>
-          <td>$60.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-5.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $60.00</span> <br />
-                
-              </div>
-            </div>
-          </td>
-          <td>12100</td>
-         <td>1</td>
-          <td>$60.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-6.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $60.00</span> <br />
-                
-              </div>
-            </div>
-          </td>
-          <td>12100</td>
-          <td>1</td>
-          <td>$60.00</td>
-        </tr>
-      </table>
-    <!-- Latest Products -->
-    <section class="section featured">
+    <!-- All Products -->
+    <section class="section all-products" id="products">
       <div class="top container">
-        <h1>Latest Products</h1>
-        <a href="product.html" class="view-more">View more</a>
+        <h1>All Products</h1>
+        <form>
+          <select>
+            <option value="1">Defualt Sorting</option>
+            <option value="2">Sort By Price</option>
+            <option value="3">Sort By Popularity</option>
+            <option value="4">Sort By Sale</option>
+            <option value="5">Sort By Rating</option>
+          </select>
+          <span><i class="bx bx-chevron-down"></i></span>
+        </form>
       </div>
       <div class="product-center container">
         <div class="product-item">
           <div class="overlay">
             <a href="productDetails.html" class="product-thumb">
-              <img src="./images/product-6.jpg" alt="" />
+              <img src="./images/product-7.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+        
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-2.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-3.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-4.jpg" alt="" />
             </a>
           </div>
           <div class="product-info">
@@ -178,8 +141,8 @@
         </div>
         <div class="product-item">
           <div class="overlay">
-            <a href="productDetails.html" class="product-thumb">
-              <img src="./images/product-1.jpg" alt="" />
+            <a href="" class="product-thumb">
+              <img src="./images/product-5.jpg" alt="" />
             </a>
             <span class="discount">40%</span>
           </div>
@@ -192,7 +155,7 @@
         <div class="product-item">
           <div class="overlay">
             <a href="productDetails.html" class="product-thumb">
-              <img src="./images/product-3.jpg" alt="" />
+              <img src="./images/product-6.jpg" alt="" />
             </a>
           </div>
           <div class="product-info">
@@ -204,7 +167,20 @@
         <div class="product-item">
           <div class="overlay">
             <a href="productDetails.html" class="product-thumb">
-              <img src="./images/product-2.jpg" alt="" />
+              <img src="./images/product-7.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="./images/product-4.jpg" alt="" />
             </a>
           </div>
           <div class="product-info">
@@ -215,7 +191,15 @@
         </div>
       </div>
     </section>
-
+    <section class="pagination">
+      <div class="container">
+      <a href="product.html"> <span>1</span></a> 
+      <a href="product.html"> <span>2</span></a> 
+      <a href="product.html"> <span>3</span></a> 
+      <a href="product.html"> <span>4</span></a> 
+        <span><i class="bx bx-right-arrow-alt"></i></span>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="footer">
       <div class="row">
@@ -242,7 +226,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Custom Script -->
     <script src="./js/index.js"></script>
   </body>

@@ -75,12 +75,21 @@ li {
   margin: 0 auto;
   padding: 0 3rem;
 }
+.signupbtn{
+      outline: none;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin-right: 1.5rem;
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+}
 
 .d-flex {
   display: flex;
   align-items: center;
 }
-
 /* 
 =================
 Header
@@ -1266,6 +1275,8 @@ th:last-child {
   margin-bottom: 3rem;
 }
 
+}
+
 .product-detail .form input {
   padding: 0.8rem;
   text-align: center;
@@ -1279,6 +1290,8 @@ th:last-child {
   color: #fff;
   border-radius: 3rem;
 }
+
+
 
 .product-detail h3 {
   text-transform: uppercase;
@@ -1296,7 +1309,7 @@ th:last-child {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .product-detail .details {
     grid-template-columns: 1fr;
   }
@@ -1312,6 +1325,13 @@ th:last-child {
 
   .product-detail .details {
     gap: 3rem;
+  }
+  .form .pro-detail{
+    margin top:10px;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    top:20px;
   }
 }
 
